@@ -15,10 +15,10 @@ body{
 }
 .container h1{
     margin: 0;
-    padding: 20px 0;
+    padding: 11px 0;
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 46px;
     font-weight: normal;
 }
 .clock, .date{
