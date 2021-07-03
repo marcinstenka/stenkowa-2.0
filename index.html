@@ -1,176 +1,162 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Stenkowa 2.0</title>
-</head>
-<body onload="main()">
+  </head>
+  <body onload="main()">
     <div class="container">
-        <h1><span>Strona</span> Strona <span>2</span>.<span>0</span></h1>
-        <div class="clock" id="clock"></div>
-        <div class="date" id="date"></div>
-        <div class="main">
-            <div class="sections">
-                <div class="section">
-                    <div class="tiles">
-                        <div class="tile__container">
-                            <a href="https://translate.google.pl/?hl=pl" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/gt.png" ></div>
-                                    <div class="front__text">Tłumacz</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://profil.wp.pl/login.html?zaloguj=poczta" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/wp.png" ></div>
-                                    <div class="front__text">Poczta</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://ztm.gda.pl/rozklady/linia-116.html" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/ztm.png" ></div>
-                                    <div class="front__text">Autobus</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://www.github.com/marcinstenka" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/gh.png" ></div>
-                                    <div class="front__text">Github</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://www.youtube.com/" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/yt.png" ></div>
-                                    <div class="front__text">YouTube</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://www.accuweather.com/pl/pl/gda%C5%84sk/275174/weather-forecast/275174" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/aw.png" ></div>
-                                    <div class="front__text">Pogoda</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://www.messenger.com/" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/ms.png" ></div>
-                                    <div class="front__text">Messenger</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://www.netflix.com/pl/login" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/netflix.png" ></div>
-                                    <div class="front__text">Netflix</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://www.facebook.com/" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/fb.png" ></div>
-                                    <div class="front__text">Facebook</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section" >
-                    <div class="tiles" id="addable">
-                        <div class="tile__container">
-                            <a href="https://poinformowani.pl/" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/kiks.jpg" ></div>
-                                    <div class="front__text">KiKŚ</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-
-                            <a href="https://gwent.one/pl/cards/" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/g1.png" ></div>
-                                    <div class="front__text">Gwent One</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://www.reddit.com/r/gwent/" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/red.png" ></div>
-                                    <div class="front__text">Reddit Gwint</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="http://www.sport247.live/pl/home" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/ft.png" ></div>
-                                    <div class="front__text">Mecze</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a href="https://hbogo.pl/" class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon"><img src="img/hbo.png" ></div>
-                                    <div class="front__text">HBO GO</div>
-                                </div>
-                                <div class="tile__back"></div>
-                            </a>
-                        </div>
-                        <div class="tile__container">
-                            <a class="tile">
-                                <div class="tile__front">
-                                    <div class="front__icon " id="newTile"><img class="front__icon-add" src="img/plus.png" ></div>
-                                    <div class="front__text">Dodaj</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <h1><span>Strona</span> Strona <span>2</span>.<span>0</span></h1>
+      <div class="clock" id="clock"></div>
+      <div class="date" id="date"></div>
+      <div class="main">
+        <div class="sections">
+          <div class="section">
+            <div class="tiles">
+              <div class="tile__container">
+                <a href="https://translate.google.pl/?hl=pl" class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/gt.png" /></div>
+                    <div class="front__text">Tłumacz</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a
+                  href="https://profil.wp.pl/login.html?zaloguj=poczta"
+                  class="tile"
+                >
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/wp.png" /></div>
+                    <div class="front__text">Poczta</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a
+                  href="https://ztm.gda.pl/rozklady/linia-116.html"
+                  class="tile"
+                >
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/ztm.png" /></div>
+                    <div class="front__text">Autobus</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a href="https://www.github.com/marcinstenka" class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/gh.png" /></div>
+                    <div class="front__text">Github</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a href="https://www.youtube.com/" class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/yt.png" /></div>
+                    <div class="front__text">YouTube</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a
+                  href="https://www.accuweather.com/pl/pl/gda%C5%84sk/275174/weather-forecast/275174"
+                  class="tile"
+                >
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/aw.png" /></div>
+                    <div class="front__text">Pogoda</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a href="http://www.sport247.live/pl/home" class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/ft.png" /></div>
+                    <div class="front__text">Mecze</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a href="https://www.poinformowani.pl/" class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/kiks.jpg" /></div>
+                    <div class="front__text">KiKŚ</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a href="https://www.messenger.com/" class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/ms.png" /></div>
+                    <div class="front__text">Messenger</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a href="https://www.netflix.com/pl/login" class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/netflix.png" /></div>
+                    <div class="front__text">Netflix</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
+              <div class="tile__container">
+                <a href="https://www.facebook.com/" class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon"><img src="img/fb.png" /></div>
+                    <div class="front__text">Facebook</div>
+                  </div>
+                  <div class="tile__back"></div>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="section">
+            <div class="tiles" id="addable">
+              <div class="tile__container">
+                <a class="tile">
+                  <div class="tile__front">
+                    <div class="front__icon" id="newTile">
+                      <img class="front__icon-add" src="img/plus.png" />
+                    </div>
+                    <div class="front__text">Dodaj</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <h6>2019 - 2021 © Wszelkie prawa zastrzeżone</h6>
     </div>
-    <div class="veil" id='veil'></div>
+    <div class="veil" id="veil"></div>
     <div class="form" id="form">
-        <form autocomplete="off">
-            <input class="addTile" type="text" id="name" placeholder="Nazwa...">
-            <input class="addTile" type="text" id="link" placeholder="Link...">
-        </form>
-        <div class="add" id="add">Dodaj</div>
+      <form autocomplete="off">
+        <input class="addTile" type="text" id="name" placeholder="Nazwa..." />
+        <input class="addTile" type="text" id="link" placeholder="Link..." />
+      </form>
+      <div class="add" id="add">Dodaj</div>
     </div>
-<script src="js/main.js"></script>
-<script src="js/clock.js"></script>
-</body>
+    <script src="js/main.js"></script>
+    <script src="js/clock.js"></script>
+  </body>
 </html>
