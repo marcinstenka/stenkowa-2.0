@@ -31,7 +31,7 @@ body {
 .clock,
 .date {
   position: absolute;
-  top: 10px;
+  top: 17px;
   font-size: 30px;
   color: white;
 }
@@ -39,7 +39,7 @@ body {
   left: 10px;
 }
 .date {
-  right: 20px;
+  right: 10px;
 }
 .container h6 {
   position: absolute;
