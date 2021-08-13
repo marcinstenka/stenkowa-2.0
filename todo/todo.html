@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="../img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo 2.0</title>
+  </head>
+  <body onload="main()">
+    <div class="container">
+      <h1 class="title"><span>Todo</span></h1>
+      <div class="clock" id="clock"></div>
+      <div class="date" id="date"></div>
+      <div class="todo">
+        <div class="todo__front">
+          <a href="../index.html">back</a>
+        </div>
+        <div class="todo__back-one"></div>
+        <div class="todo__back-two"></div>
+      </div>
+      <div class="main">
+        <div class="inputs">
+          <input type="color" class="colorPicker" value="#6558ff" />
+          <div class="inputWrapper">
+            <input class="todoText" type="text" id="input" />
+            <div class="inputOutline"></div>
+          </div>
+          <div class="dateWrapper">
+            <input type="date" class="datePicker" id="datePicker" required />
+            <img src="img/calendar.png" alt="Calendar icon" />
+          </div>
+        </div>
+        <div class="todos"></div>
+      </div>
+      <h6>2019 - 2021 © Wszelkie prawa zastrzeżone</h6>
+    </div>
+    <script src="../js/clock.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>

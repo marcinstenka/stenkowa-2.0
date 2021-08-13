@@ -19,13 +19,14 @@ body {
     rgba(75, 65, 190, 1) 100%
   );
 }
-.container h1 {
+.title {
   margin: 0;
   padding: 7px 0;
   text-align: center;
   color: white;
   font-size: 46px;
   font-weight: normal;
+  overflow: hidden;
 }
 .clock,
 .date {
@@ -48,6 +49,57 @@ body {
   margin: 0;
   color: white;
   font-weight: normal;
+}
+.todo {
+  position: absolute;
+  right: 31px;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+.todo__front {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgb(19, 31, 47);
+  padding: 8px 4px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.todo__back-one,
+.todo__back-two {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  transition: 0.1s;
+  background: rgb(218, 112, 59);
+  background: linear-gradient(
+    0deg,
+    rgba(218, 112, 59, 1) 0%,
+    rgba(143, 66, 119, 1) 33%,
+    rgba(143, 66, 119, 1) 66%,
+    rgba(218, 112, 59, 1) 100%
+  );
+}
+.todo__back-one {
+  right: 2px;
+}
+.todo__back-two {
+  left: 10px;
+}
+.todo:hover > .todo__back-one,
+.todo:hover > .todo__back-two {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+.todo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: rgb(101, 88, 255);
+  text-decoration: none;
 }
 .main {
   display: flex;
@@ -260,8 +312,9 @@ input:focus {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
   font-weight: bold;
+  border: none;
 }
 .add:hover {
   background: rgb(107, 13, 76);
@@ -275,7 +328,7 @@ input:focus {
 ::-webkit-scrollbar {
   /* without this it doesn't work*/
   background-color: transparent;
-  width: 15px;
+  width: 12px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(218, 112, 59);
