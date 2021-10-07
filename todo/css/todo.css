@@ -189,6 +189,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
+  width: 88%;
 }
 .todo__date {
   top: 0;
