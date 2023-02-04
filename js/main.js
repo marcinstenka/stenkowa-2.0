@@ -13,7 +13,7 @@ const AddNewTile = () => {
   const link = document.querySelector('#link').value;
   // choosing random number for icon
   const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-  const number = random(1, 7);
+  const number = random(1, 4);
   //   generateTile(number, name, link);
   let getLocalStorage = localStorage.getItem('TILES');
   getLocalStorage
